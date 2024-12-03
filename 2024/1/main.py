@@ -17,13 +17,6 @@ def define_list():
     return left_list, right_list
 
 
-def sort_list():
-    left_list, right_list = define_list()
-    left_list.sort()
-    right_list.sort()
-    return left_list, right_list
-
-
 def main():
     difference = 0
     a, b = define_list()
