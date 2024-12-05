@@ -7,11 +7,13 @@ def define_floor():
     floor = 0
     file = get_file_content("input.txt")
     for i in range(len(file)):
-        print(file[i])
         if file[i] == "(":
             floor += 1
         elif file[i] == ")":
             floor -= 1
+        if floor == -1:
+            print(i + 1)
+            break
     print(floor)
 
 
