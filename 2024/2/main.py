@@ -33,7 +33,6 @@ def define_safe_list():
         elif all(sum in [1, 2, 3] for sum in sums):
             safe_list += 1
         else:
-            # check removing a item frrom line can make it safe
             for j in range(len(line)):
                 new_line = line.copy()
                 new_line.pop(j)
